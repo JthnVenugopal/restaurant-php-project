@@ -1,0 +1,329 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  line-height: 2.0;
+
+
+}
+
+body {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.wrapper{
+  background: linear-gradient(90deg,rgba(238, 255, 5, 0.213),#01ffee5e,#ff02025b,rgba(5, 18, 136, 0.486)
+  ,rgba(7, 255, 234, 0.419),rgba(1, 255, 221, 0.438),rgba(255, 0, 0, 0.462));
+  
+}
+
+a{
+  text-decoration: none;
+  color: red;
+}
+
+
+/* Links */
+.links {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.links a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* css for sections */
+
+section{
+  background-color: rgb(255, 255, 255);
+  
+
+}
+
+/* css for navbar */
+
+.navbar-section{
+  height: fit-content;
+  z-index: 1000;
+  
+}
+
+.navbar-section{
+  background: linear-gradient(90deg,rgba(255, 253, 253, 0.198),#fbfff9ab,#ffffffe3,rgba(255, 255, 255, 0.876)
+  ,rgba(255, 250, 250, 0.793),rgba(252, 255, 255, 0.908),rgba(255, 249, 249, 0.864));
+}
+
+
+
+.navbar-light .navbar-nav .nav-link {
+  font-weight: 600;
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 5px;
+  left: 0;
+  background-color: red;
+  transition: width 0.3s ease;
+  right: 0;
+  margin: 0 auto;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after {
+  width: 50%;
+}
+
+.navbar-nav li{
+  gap: 5%;
+}
+
+/* css for food-search ---------------------------------------------------------------------------------*/
+
+.food-search{
+  background:  linear-gradient(45deg,rgba(47, 227, 255, 0.095),rgba(0, 213, 255, 0.157),rgba(0, 255, 213, 0.109)),url(../resources/bg.jpg);
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-position: center;
+  background-repeat:  no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  
+}
+
+.food-search-h1{
+  text-shadow: 2px 3px 20px rgba(0, 0, 0, 0.772);
+  font-weight: 500;
+  text-align: center;
+}
+
+.hero-form input[type=text]{
+  /* border: 1px solid black; */
+  border-radius: 2rem 0 0 2rem;
+  height: 4rem;
+  
+}
+
+.hero-form button{
+  border-radius: 0 2rem 2rem 0;
+  width: 10rem;
+  
+
+}
+
+
+
+@media(max-width:992px){
+
+  .food-search-h1{
+    font-size: 2.8rem;
+    text-align: left;
+    padding: 1%;
+  }
+
+  .food-search{
+    background-position: left;
+  }
+
+.nav-item a{
+  margin-bottom: 2%;
+}
+
+  .navbar-light .navbar-nav .nav-link::after {
+    display: none;
+   
+  }
+
+  .food-search{
+    height: 80vh;
+  }
+  .hero-form{
+   justify-content: center;
+
+  }
+
+  .hero-form input{
+    width: 60%
+
+  }
+
+
+
+ .navbar-nav .nav-item .btn{
+  margin-bottom:  2%;
+  margin-top: 2%;
+ }
+
+ .sign-out{
+ position: relative;
+ right: 5%
+ }
+
+
+}
+/* css mediaquery ends*/
+
+
+/* css for category section---------------------------------------------------------- */
+
+
+
+.category-section{
+  
+
+  background: linear-gradient(90deg,rgba(255, 253, 253, 0.198),#fbfff9ab,#ffffffe3,rgba(255, 255, 255, 0.876)
+  ,rgba(255, 250, 250, 0.793),rgba(252, 255, 255, 0.908),rgba(255, 249, 249, 0.864));
+
+}
+
+
+.row2 .container{
+  /* border: 1px solid black; */
+  padding: 2%;
+  
+}
+
+.row2 .container .col-md-4{ 
+  /* border: 1px solid black; */
+  margin: 2%;
+  height:  70vh;
+  border-radius: 4rem;
+
+}
+
+.row2 .container .col-md-4:hover {
+      
+        transform:scale3d(1.05, 1.05, 1.02);;
+        transition: 0.6s;
+        
+}
+
+
+
+
+
+.cat-1{
+  background: linear-gradient(45deg,rgba(47, 227, 255, 0.095),rgba(0, 213, 255, 0.157),rgba(0, 255, 213, 0.109)),url(../resources/burger.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cat-2{
+  background:linear-gradient(45deg,rgba(47, 227, 255, 0.095),rgba(0, 213, 255, 0.157),rgba(0, 255, 213, 0.109)) ,url(../resources/momo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cat-3{
+  background: linear-gradient(45deg,rgba(47, 227, 255, 0.095),rgba(0, 213, 255, 0.157),rgba(0, 255, 213, 0.109)),url(../resources/pizza.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media(max-width:992px){
+
+ body{
+ overflow-x: hidden;
+ }
+
+  .row2 .container  { 
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+    width: 100vw;
+  }
+}
+
+.row2 .container .col-md-4 h4{
+  position: relative;
+  top: 70%;
+  color: white;
+  font-weight: bold;
+  text-shadow: 10px 10px 10px black;
+
+}
+
+
+/* css for food menu */
+
+.food-menu-section{
+  background-color: #dfe4ea;
+  height:fit-content;
+}
+
+.food-menu-section .row2{ 
+  padding:1% 0;
+  height: 100vh
+}
+
+.food-menu-section .row2 .col-lg-6{
+ 
+  padding: 1%;
+
+}
+
+.food-menu-section .row2 .col-lg-6  section{ 
+  /* background-color: blueviolet; */
+  height: 100%;
+  /* border: 1px solid black; */
+
+  border-radius: 4rem;
+
+  display: flex;
+
+}
+
+.food-menu-section .row2 .col-lg-6  section div{
+  /* border: 2px solid black; */
+  
+}
+
+.food-menu-img{
+  flex: 1;
+}
+
+.food-menu-desc{
+  flex: 2;
+}
+
+.food-menu-img img{ 
+  height: 100% ;
+  width: 100%;
+
+  border-radius: 4rem 0 0 4rem
+
+}
+
+  .fd-menu-btn{
+  position: relative;
+  left: 40%;
+}
+
+
+/* css for food menu end */
